@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="text-primary">🎯Guess The Number</h1>
+        <h3 class="text-info">Boss: 🧒 / Player:🖥️</h3>
+        <p class="lead">Pick a number between <mark>1</mark> and <mark>100</mark> — the computer will try to guess it!</p>
+        <div class="input-group mt-2 w-100 mx-auto">
+            <input type="number" class="form-control" id="setNum" name="guessNum" min="1" max="100" placeholder="Set your secret number (Computer won't peek!"></input>
+            <button type="button" class="btn btn-dark text-light" id="setBtn">Set!</button>
+        </div>
+        <div class="mt-2">
+            <p>The computer's guess: <br><h2 id="guessedNum">?</h2></p>
+        </div>
+        <section class="mt-2 btn-group">
+            <button type="button" class="btn btn-warning" id="high">Too High 👆</button>
+            <button type="button" class="btn btn-warning" id="low">Too Low 👇</button>
+            <button type="button" class="btn btn-success" id="correct">Correct ⭕</button>
+        </section>
+        <p id="hintText" class="text-muted">Set your number and let the computer guess! 6 guesses left.</p>
+        <button class="btn btn-primary" id="restartSet">RESTART 🔄</button>
+
+    </div>
+    <script src="./js/bossScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
