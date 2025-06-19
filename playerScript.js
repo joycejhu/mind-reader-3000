@@ -7,7 +7,7 @@ const restTime=document.getElementById("warningText");
 const remainNum = document.getElementById("remainTime");
 const opportunity=document.getElementById("opportunity");
 const restartGame=document.getElementById("restartGuess");
-
+const homePage=document.getElementById("homePage");
 
 restartGame.style.display="none";
 
@@ -70,4 +70,8 @@ input.addEventListener('keydown',(event)=>{
     if(event.key==="Enter"){
         submit.click();
     }
+})
+
+homePage.addEventListener("click",()=>{
+    location.href="index.html";
 })
