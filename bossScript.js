@@ -11,6 +11,7 @@ const low=document.getElementById("low");
 const correct=document.getElementById("correct");
 const hintText=document.getElementById("hintText");
 const restartSet = document.getElementById("restartSet");
+const homePage=document.getElementById("homePage");
 
 restartSet.style.display="none";
 
@@ -132,4 +133,8 @@ setNum.addEventListener('keydown',(event)=>{
     if(event.key==="Enter"){
         setBtn.click();
     }
+})
+
+homePage.addEventListener("click",()=>{
+    location.href="index.html";
 })
