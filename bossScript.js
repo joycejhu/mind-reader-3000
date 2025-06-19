@@ -14,7 +14,9 @@ const restartSet = document.getElementById("restartSet");
 const homePage=document.getElementById("homePage");
 
 restartSet.style.display="none";
-
+high.disabled=true;
+low.disabled=true;
+correct.disabled=true;
 
 setBtn.addEventListener("click",()=>{
     const setNumber =Number(setNum.value);
@@ -23,6 +25,9 @@ setBtn.addEventListener("click",()=>{
         setNum.value="";
         alert("Please input a number from 1 to 100.");
     }else{
+        high.disabled=false;
+        low.disabled=false;
+        correct.disabled=false;
         guessedNum.innerText="🤔...";
         setTimeout(()=>{
             guessedNum.innerText=computer;
