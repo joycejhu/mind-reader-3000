@@ -9,6 +9,7 @@ const opportunity=document.getElementById("opportunity");
 const restartGame=document.getElementById("restartGuess");
 const homePage=document.getElementById("homePage");
 
+
 restartGame.style.display="none";
 
 
